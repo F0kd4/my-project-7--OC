@@ -1,0 +1,31 @@
+.home_page {
+  display: flex;
+  flex-direction: column;
+
+  &_section1 {
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    width: 1240px;
+    height: 223px;
+    border-radius: 25px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../../assets/img/IMG.svg);
+  }
+}
+
+.home_page_section1_txt {
+  position: relative;
+  left: 24.9%;
+  right: 25.14%;
+  top: 24.32%;
+  bottom: 69.04%;
+
+  font-size: 48px;
+  line-height: 142.6%;
+  /* or 68px */
+
+  display: flex;
+  align-items: flex-end;
+  color: white;
+}

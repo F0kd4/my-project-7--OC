@@ -1,0 +1,28 @@
+.error_message {
+  text-align: center;
+  font-family: $font-1;
+  color: $color-1;
+
+  h1 {
+    font-family: $font-bold;
+    font-style: bold;
+    font-weight: 700;
+    font-size: 288px;
+    line-height: 142.6%;
+  }
+
+  h2 {
+    font-size: 36px;
+    line-height: 142.6%;
+    /* or 51px */
+    color: $color-1;
+  }
+}
+
+.backlink {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  color: $color-1;
+  margin-top: 12%;
+}
