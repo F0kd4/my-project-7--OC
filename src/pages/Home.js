@@ -1,10 +1,9 @@
 import React from "react";
-import Header from "../components/Header";
+// import Logements from "../data/logements.json";
 
 const Home = () => {
   return (
     <div>
-      <Header />
       <div className="home_page">
         <div className="home_page_section1">
           <h1 className="home_page_section1_txt">

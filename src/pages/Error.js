@@ -1,11 +1,9 @@
 import React from "react";
-import Header from "../components/Header";
 import { NavLink } from "react-router-dom";
 
 const Error = () => {
   return (
     <div>
-      <Header />
       <div className="error_page">
         <h1 className="bigerror">404</h1>
         <h2>Oups! La page que vous demandez n'existe pas.</h2>
