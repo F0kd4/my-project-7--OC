@@ -1,4 +1,4 @@
-.error_message {
+.error_page {
   text-align: center;
   font-family: $font-1;
   color: $color-1;
@@ -12,9 +12,8 @@
   }
 
   h2 {
+    margin-top: -230px;
     font-size: 36px;
-    line-height: 142.6%;
-    /* or 51px */
     color: $color-1;
   }
 }
@@ -24,5 +23,5 @@
   justify-content: center;
   text-decoration: underline;
   color: $color-1;
-  margin-top: 12%;
+  margin-top: 9%;
 }
