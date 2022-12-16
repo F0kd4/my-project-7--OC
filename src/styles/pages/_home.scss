@@ -1,4 +1,26 @@
 .home__page {
   width: 100%;
   margin: 0 5% 0 5%;
+
+  &__section2 {
+    width: 90%;
+    margin: 2% auto 2% auto;
+    background-color: #f7f7f7;
+    border-radius: 25px;
+  }
+
+  &__section2__card {
+    width: 28%;
+  }
+
+  &__section2__card__link {
+    text-decoration: none;
+  }
+}
+
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
 }

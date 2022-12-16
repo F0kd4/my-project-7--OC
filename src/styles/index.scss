@@ -1,8 +1,15 @@
+//---> Application des styles
+
+//---> Généraux
 @import "./settings";
 
+//---> Pages
 @import "./pages/error";
 @import "./pages/home";
 
+
+//---> Composants
 @import "./components/footer";
 @import "./components/header";
 @import "./components/homebanner";
+@import "./components/thumb";
