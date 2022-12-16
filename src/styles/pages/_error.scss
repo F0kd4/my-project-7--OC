@@ -1,4 +1,4 @@
-.error_page {
+.error__page {
   text-align: center;
   font-family: $font-1;
   color: $color-1;
@@ -9,10 +9,10 @@
     font-weight: 700;
     font-size: 288px;
     line-height: 142.6%;
+    margin-bottom: 0;
   }
 
-  h2 {
-    margin-top: -230px;
+  span {
     font-size: 36px;
     color: $color-1;
   }

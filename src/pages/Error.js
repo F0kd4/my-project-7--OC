@@ -6,7 +6,7 @@ const Error = () => {
     <div>
       <div className="error__page">
         <h1 className="bigerror">404</h1>
-        <h2>Oups ! La page que vous demandez n'existe pas.</h2>
+        <span>Oups ! La page que vous demandez n'existe pas.</span>
         <NavLink className="backlink" to="/">
           Retourner sur la page d’accueil
         </NavLink>
