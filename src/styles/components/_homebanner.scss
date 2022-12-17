@@ -3,11 +3,11 @@
   margin: auto;
   height: 255px;
   position: relative;
-  margin-bottom: 20px;
   border-radius: 25px;
+  color: white;
+  text-align: center;
 
   &__img {
-    position: relative;
     width: 100%;
     border-radius: inherit;
     filter: brightness(65%);
@@ -15,12 +15,12 @@
 
   &__title {
     position: absolute;
-    top: 38%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -65%);
+    transform: translate(-50%, -50%);
     font-size: 48px;
     font-weight: 500;
     font-size: 48px;
-    color: white;
+    
   }
 }
