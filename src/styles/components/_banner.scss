@@ -1,0 +1,25 @@
+.homebanner {
+  width: 100%;
+  margin: auto;
+  border-radius: 25px;
+  color: white;
+  position: relative;
+  text-align: center;
+
+  &__img {
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    object-fit: cover;
+    filter: brightness(65%);
+  }
+
+  &__title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-weight: 500;
+    font-size: 48px;
+  }
+}

@@ -1,13 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const Thumb = ({ cover, title }) => {
+const Thumb = ({ cover, title, link }) => {
   return (
-    <div className="thumb">
+    <article className="thumb">
       <div className="thumb__card">
-        <img src={cover} alt="couverture logement" className="thumb__card__img" />
-        <h2 className="thumb__card__title">{title}</h2>
+        <Link to={`/logement/${link}`} className="thumb__card__link">
+            <img
+              src={cover}
+              alt="couverture logement"
+              className="thumb__card__img"
+            />
+            <h2 className="thumb__card__title">{title}</h2>
+        </Link>
       </div>
-    </div>
+    </article>
   );
 };
 

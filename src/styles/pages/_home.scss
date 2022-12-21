@@ -1,30 +1,15 @@
 .home__page {
-  width: 100%;
-  margin: 0 5% 0 5%;
-  display: flex;
-  justify-content: space-around;
-
-  &__section1 {
-    margin: 0 auto 6% auto;
-  }
+  width: 90%;
+  margin: auto;
 
   &__section2 {
-    width: 90%;
     margin: 2% auto 2% auto;
     background-color: #f7f7f7;
     border-radius: 25px;
   }
-
-  &__section2__card {
-    width: 28%;
-  }
-
-  &__section2__card__link {
-    text-decoration: none;
-  }
 }
 
-.display {
+.home__page__section2__display {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

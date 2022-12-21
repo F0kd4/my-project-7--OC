@@ -1,7 +1,13 @@
+
+.thumb{
+  display: flex;
+  width: 30%;
+}
+
 .thumb__card {
   background: linear-gradient(
     180deg,
-    rgba(223, 29, 29, 0) 20%,
+    rgba(223, 29, 29, 0) 0%,
     rgba(0, 0, 0, 1) 100%
   );
   width: 100%;
@@ -10,13 +16,23 @@
   margin: 5%;
   position: relative;
   text-align: left;
-  color: white;
+
+
+
+  &__link{
+    text-decoration: none;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    color: white;
+  }
 
   &__img {
     width: 100%;
     height: inherit;
     object-fit: cover;
     border-radius: inherit;
+    opacity: 90%;
   }
 
   &__title {

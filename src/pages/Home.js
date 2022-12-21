@@ -1,31 +1,29 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-import Homebanner from "../components/Homebanner";
+import Banner from "../components/Banner";
 import Thumb from "../components/Thumb";
 
 import Logements from "../data/logements.json";
 
-import image from "../assets/img/IMG.svg";
+import image from "../assets/img/IMG.png";
+
+const title = "Chez vous, partout et ailleurs";
 
 const Home = () => {
   return (
-    <div className="home_page">
+    <div className="home__page">
       <section className="home__page__section1">
-        <Homebanner cover={image} />
+        <Banner cover={image} title={title} />
       </section>
       <section className="home__page__section2">
-        <div className="display">
+        <div className="home__page__section2__display">
           {Logements.map((logement) => {
             return (
-              <article className="home__page__section2__card" key={logement.id}>
-                <Link
-                  to={`/logement/${logement.id}`}
-                  className="home__page__section2__card__link"
-                >
-                  <Thumb cover={logement.cover} title={logement.title} />
-                </Link>
-              </article>
+              <Thumb
+                cover={logement.cover}
+                title={logement.title}
+                link={logement.id}
+              />
             );
           })}
         </div>
