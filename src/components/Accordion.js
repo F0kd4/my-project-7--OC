@@ -10,7 +10,7 @@ function Collapse({ titre, description }) {
       <div className="collapse__header">
         <div className="collapse__title">{titre}</div>
         <span
-          className={`collapse__fleche ${open}`}
+          className={`collapse__arrow ${open}`}
           onClick={() => setOpen(!open)}
         >
           <img src={fleche} alt="Cliquer pour développer" />

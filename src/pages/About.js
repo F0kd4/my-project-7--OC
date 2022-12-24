@@ -17,11 +17,7 @@ const About = () => {
         <div className="about__page__section2__display">
           {Collapses.map((collapse) => {
             return (
-              <Accordion
-                titre={collapse.title}
-                description={collapse.body}
-                key={collapse.id}
-              />
+              <Accordion titre={collapse.title} description={collapse.body} />
             );
           })}
         </div>

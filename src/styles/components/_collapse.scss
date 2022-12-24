@@ -16,24 +16,27 @@
 
   &__title {
     color: white;
+    font-weight: 500;
+    font-size: 24px;
     height: 50px;
     line-height: 50px;
     margin: 5px 10px;
   }
 
-  &__fleche {
+  &__arrow {
     display: flex;
-    justify-content: flex-end;
+    justify-content: start;
     margin-right: 10px;
     width: 100%;
+    transform: rotate(180deg);
   }
-  &__fleche:hover {
+  &__arrow:hover {
     cursor: pointer;
   }
 
-  &__fleche.true {
-    justify-content: start;
-    transform: rotate(-180deg);
+  &__arrow.true {
+    justify-content: flex-end;
+    transform: rotate(0deg);
   }
 
   &__body {
@@ -41,6 +44,8 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     color: $color-1;
+    font-size: 24px;
+    font-weight: 400;
     height: 75%;
     margin-top: -10px;
     min-height: 100px;
