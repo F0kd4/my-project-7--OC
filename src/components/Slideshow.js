@@ -36,6 +36,7 @@ function Slideshow({ images }) {
       )}
       {images.map((image, index) => {
         return (
+          <>
             <img
               key={index}
               className={
@@ -44,11 +45,17 @@ function Slideshow({ images }) {
               src={image}
               alt="Logement"
             />
-            /* <span className="slideshow__compteur">
+            <div
+              className={
+                index === img ? "slideshow__compteur actif" : "slideshow__compteur"
+              }
+            >
               {index + 1}/{nbrImg}
-            </span> */
+            </div>
+          </>
         );
       })}
+
       {nbrImg > 1 && (
         <img
           className="fleche fleche-droite"
