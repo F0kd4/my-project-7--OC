@@ -3,6 +3,9 @@ import { useParams, Navigate } from "react-router-dom";
 
 import Logements from "../data/logements.json";
 
+import fullstar from "../assets/img/fullstar.svg";
+import emptystar from "../assets/img/emptystar.svg";
+
 import Accordion from "../components/Accordion";
 import Slideshow from "../components/Slideshow";
 import Tag from "../components/Tag";
@@ -11,11 +14,43 @@ const Logement = () => {
   const { logementId } = useParams();
   const oneLogement = Logements.find((logement) => logement.id === logementId);
 
-  const tags = oneLogement?.tags.map((tag, index) => {
-  return <Tag key={index} tag={tag} />
-})
+  const ratingStars = [];
+  let fullStar = true;
+  const ratingLogement = parseInt(oneLogement?.rating);
+  for (let i = 0; i < 5; i++) {
+    if (ratingLogement <= i) {
+      fullStar = false;
+    }
+    if (fullStar) {
+      ratingStars.push(
+        <img
+          key={i}
+          className="star"
+          src={fullstar}
+          alt="notation étoile pleine"
+        />
+      );
+    } else {
+      ratingStars.push(
+        <img
+          key={i}
+          className="star"
+          src={emptystar}
+          alt="notation étoile vide"
+        />
+      );
+    }
+  }
 
-  
+  const tags = oneLogement?.tags.map((tag, index) => {
+    return <Tag key={index} tag={tag} />;
+  });
+
+  const equipmentsDescription = oneLogement?.equipments.map(
+    (equipment, index) => {
+      return <li key={index}>{equipment}</li>;
+    }
+  );
 
   return (
     <>
@@ -41,7 +76,7 @@ const Logement = () => {
                   alt="Profil propriétaire"
                 />
               </div>
-              {/* <div className="ratingStars">{noteLogement}</div> */}
+              <div className="ratingStars">{ratingStars}</div>
             </div>
           </div>
           <div className="ficheLogement__description">
@@ -51,7 +86,7 @@ const Logement = () => {
             />
             <Accordion
               titre="Équipements"
-              description={oneLogement?.equipments}
+              description={equipmentsDescription}
             />
           </div>
         </div>

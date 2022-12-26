@@ -34,28 +34,10 @@ function Slideshow({ images }) {
           onClick={previousImg}
         />
       )}
-      {images.map((image, index) => {
-        return (
-          <>
-            <img
-              key={index}
-              className={
-                index === img ? "slideshow__img actif" : "slideshow__img"
-              }
-              src={image}
-              alt="Logement"
-            />
-            <div
-              className={
-                index === img ? "slideshow__compteur actif" : "slideshow__compteur"
-              }
-            >
-              {index + 1}/{nbrImg}
-            </div>
-          </>
-        );
-      })}
-
+      <img className="slideshow__img actif" src={images[img]} alt="Logement" />
+      <div className="slideshow__compteur actif">
+        {img + 1}/{nbrImg}
+      </div>
       {nbrImg > 1 && (
         <img
           className="fleche fleche-droite"

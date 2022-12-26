@@ -17,9 +17,10 @@ const Home = () => {
       </section>
       <section className="home__page__section2">
         <div className="home__page__section2__display">
-          {Logements.map((logement) => {
+          {Logements.map((logement, index) => {
             return (
               <Thumb
+                key={index}
                 cover={logement.cover}
                 title={logement.title}
                 link={logement.id}

@@ -3,6 +3,7 @@
   margin-bottom: 35px;
   text-align: left;
   margin-bottom: 3%;
+  list-style: none;
 
   &__header {
     align-items: center;
@@ -12,6 +13,9 @@
     height: 25%;
     min-height: 50px;
     width: 100%;
+  }
+  &__header:hover {
+    cursor: pointer;
   }
 
   &__title {
@@ -29,9 +33,6 @@
     margin-right: 10px;
     width: 100%;
     transform: rotate(180deg);
-  }
-  &__arrow:hover {
-    cursor: pointer;
   }
 
   &__arrow.true {
