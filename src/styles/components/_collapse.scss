@@ -25,6 +25,9 @@
     height: 50px;
     line-height: 50px;
     margin: 5px 10px;
+    @media screen and (max-width: 800px) {
+      font-size: medium;
+    }
   }
 
   &__arrow {
@@ -51,5 +54,8 @@
     margin-top: -10px;
     min-height: 100px;
     padding: 25px 10px 10px 10px;
+    @media screen and (max-width: 800px) {
+      font-size: small;
+    }
   }
 }

@@ -3,8 +3,14 @@
   margin: auto;
 }
 
-.about__page__section2{
+.about__page__section2 {
   width: 80%;
   margin: auto;
   margin-top: 3%;
+}
+
+@media screen and (max-width: 800px) {
+  .about__page__section2 {
+    width: 95%;
+  }
 }

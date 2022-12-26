@@ -8,4 +8,8 @@
   min-width: 115px;
   padding: 5px 17px;
   text-align: center;
+  @media screen and (max-width: 800px) {
+    font-size: smaller;
+    width: 20%;
+  }
 }
