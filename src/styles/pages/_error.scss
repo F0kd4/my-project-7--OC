@@ -10,11 +10,17 @@
     font-size: 288px;
     line-height: 142.6%;
     margin-bottom: 0;
+    @media screen and (max-width: 800px) {
+      font-size: 96px;
+    }
   }
 
   span {
     font-size: 36px;
     color: $color-1;
+    @media screen and (max-width: 800px) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -24,4 +30,7 @@
   text-decoration: underline;
   color: $color-1;
   margin-top: 9%;
+  @media screen and (max-width: 800px) {
+    padding-bottom: 60%;
+  }
 }
