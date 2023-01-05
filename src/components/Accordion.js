@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 import fleche from "../assets/img/fleche.svg";
 
@@ -17,5 +18,10 @@ function Collapse({ titre, description }) {
     </div>
   );
 }
+
+Collapse.propTypes = {
+  titre: PropTypes.string,
+  description: PropTypes.string,
+};
 
 export default Collapse;

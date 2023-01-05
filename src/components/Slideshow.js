@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
 import fleche from "../assets/img/flecheslide.svg";
 
@@ -49,5 +50,9 @@ function Slideshow({ images }) {
     </div>
   );
 }
+
+Slideshow.propTypes = {
+  images: PropTypes.array,
+};
 
 export default Slideshow;

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Homebanner = ({ cover, title }) => {
   return (
@@ -11,6 +12,11 @@ const Homebanner = ({ cover, title }) => {
       <h1 className="homebanner__title">{title}</h1>
     </div>
   );
+};
+
+Homebanner.propTypes = {
+  cover: PropTypes.string.isRequired,
+  title: PropTypes.string,
 };
 
 export default Homebanner;
