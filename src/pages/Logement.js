@@ -42,11 +42,11 @@ const Logement = () => {
     }
   }
 
-  const tags = oneLogement?.tags.map((tag, index) => {
+  const tags = oneLogement.tags.map((tag, index) => {
     return <Tag key={index} tag={tag} />;
   });
 
-  const equipmentsDescription = oneLogement?.equipments.map(
+  const equipmentsDescription = oneLogement.equipments.map(
     (equipment, index) => {
       return <li key={index}>{equipment}</li>;
     }
@@ -56,7 +56,7 @@ const Logement = () => {
     <>
       {oneLogement ? (
         <div className="logement__page">
-          <Slideshow images={oneLogement?.pictures} />
+          <Slideshow images={oneLogement.pictures} />
           <div className="ficheLogement">
             <div className="ficheLogement__info">
               <span className="ficheLogement__info__title">
@@ -69,7 +69,7 @@ const Logement = () => {
             </div>
             <div className="ficheLogement__owner">
               <div className="ficheLogement__owner__info">
-                <span className="ownerName">{oneLogement?.host.name}</span>
+                <span className="ownerName">{oneLogement.host.name}</span>
                 <img
                   className="profilpicture"
                   src={oneLogement?.host.picture}

@@ -21,7 +21,6 @@ function Collapse({ titre, description }) {
 
 Collapse.propTypes = {
   titre: PropTypes.string,
-  description: PropTypes.string,
 };
 
 export default Collapse;
